@@ -1,8 +1,11 @@
 import streamlit as st
 from surprise import SVD
 import pandas as pd
+import pickle
 
-# Assuming movie_ratings, movies, and svd_model are already loaded
+# Load data back from the file
+with open('recommendation_movie_svd_706.pkl', 'rb') as file:
+    svd_model, movie_ratings, movies = pickle.load(file)
 
 # Title for the app
 st.title("Movie Recommendations")
