@@ -31,4 +31,3 @@ st.write(f"### Top 10 movie recommendations for User {user_id}:")
 for recommendation in top_recommendations:
     movie_title = movies[movies['movieId'] == recommendation.iid]['title'].values[0]
     st.write(f"{movie_title} (Estimated Rating: {recommendation.est:.2f})")
-
