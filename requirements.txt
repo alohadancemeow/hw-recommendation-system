@@ -1,5 +1,4 @@
-
-scikit-learn
+streamlit>=1.20.0
 pandas
-scikit-surprise
-numpy==1.26.14
+scikit-surprise==1.1.1
+numpy==1.21.6
